@@ -1,0 +1,224 @@
+/* إعدادات أساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #013220; /* اللون الأخضر السعودي الداكن */
+    color: white;
+    direction: rtl;
+    text-align: right;
+}
+
+/* رأس الصفحة والشعار */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #004d20;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* اللغة */
+.language-switch {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switch .btn {
+    background-color: #ffcc00;
+    color: #013220;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.language-switch .btn:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+/* الفيديو في الخلفية */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: #ffcc00;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    color: #013220;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+/* باقي الأقسام */
+section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.vision {
+    background-color: #003118;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section .btn {
+    background-color: #ffcc00;
+    color: #013220;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+}
+
+section .btn:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+.city-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.city img {
+    width: 100%;
+    height: 200px; /* حجم متوسط للصور */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.growth-stat-content img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* حجم كبير نسبيًا */
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.growth-text h2, .growth-text ul {
+    color: white;
+    text-align: right;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #004d20;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #002810;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 1rem;
+}
+
+footer .footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+<style>
+    body {
+        background-image: url('F:/Desktop/project 1/pages/images.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* لجعل الخلفية ثابتة أثناء التمرير */
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+footer .footer-links a:hover {
+    text-decoration: underline;
